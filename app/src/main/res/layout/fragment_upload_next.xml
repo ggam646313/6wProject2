@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+
+        <ImageButton
+            android:id="@+id/imgbackbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_32dp"
+            android:background="#FFFFFF"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새 게시물"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/imgbackbtn"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공유"
+            android:textSize="16sp"
+            android:background="#00FF0000"
+            android:textColor="#5587ED"
+            android:layout_alignParentRight="true"/>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_post"
+            android:background="#999999"/>
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/circle_account"
+             android:layout_width="64dp"
+             android:layout_height="64dp"
+             android:src="@drawable/ic_account_circle_black_32dp"
+             android:layout_below="@+id/view"
+             android:layout_margin="8dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="문구 입력..."
+            android:ems="8"
+            android:textSize="24sp"
+            android:layout_toRightOf="@+id/circle_account"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="16dp"/>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/circle_account"
+            android:background="#999999"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
