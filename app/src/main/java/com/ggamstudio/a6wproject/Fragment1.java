@@ -1,29 +1,25 @@
 package com.ggamstudio.a6wproject;
 
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class Fragment1 extends Fragment {
 
-//    Button loginbtn;
-//    ViewPager pager;
-//    MyAdapter adapter;
+//    TextView tv;
 
-
-
-//    private FragmentManager fragmentManager = getSupportFragmentManager();
+//    private FragmentManager fragmentManager = getChildFragmentManager();
 //
 //
 //    private Fragment_home fragment_home = new Fragment_home();
@@ -31,30 +27,15 @@ public class MainActivity extends AppCompatActivity {
 //    private Fragment_upload fragment_upload = new Fragment_upload();
 //    private Fragment_favorite fragment_favorite = new Fragment_favorite();
 //    private Fragment_my fragment_my = new Fragment_my();
-//
+
 //    BottomNavigationView bnv;
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        //pager=findViewById(R.id.pager);
-        //adapter= new MyAdapter(getSupportFragmentManager());
-        //pager.setAdapter(adapter);
-
-//        loginbtn.findViewById(R.id.loginBtn);
+//    @Override
+//    public void onCreate(@Nullable Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
 //
-//        loginbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
+//        bnv= getView().findViewById(R.id.bnv);
 
-//        bnv= findViewById(R.id.bnv);
-//
 //        FragmentTransaction transaction = fragmentManager.beginTransaction();
 //        transaction.replace(R.id.frame_layout, fragment_home).commitAllowingStateLoss();
 //
@@ -92,22 +73,13 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-    }
+//    }
 
-    public void clickLogin(View view) {
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view= inflater.inflate(R.layout.fragment_1,container,false);
 
-//        FragmentManager fragmentManager= getSupportFragmentManager();
-//
-//        FragmentTransaction ft= fragmentManager.beginTransaction();
-//
-//        Fragment1 fragment1= new Fragment1();
-//
-//        ft.add(R.id.tv_fragment1, fragment1);
-//
-//        ft.addToBackStack(null);
-//
-//        ft.commit();
-
-
+        return view;
     }
 }
